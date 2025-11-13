@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+
+<body>
+    <img class="gorro" src="img/Gorro/hat.png" alt="">
+    <div class="contenedor-login">
+        <a href="index.html"><img src="img/logo-login.png" alt="" /></a>
+        <h2 class="titulo-login">Iniciar Sesión</h2>
+
+        <div id="mensaje-error" class="mensaje-error"></div>
+
+        <form id="formLogin">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Pon tu usuario" required
+                class="entrada-texto" />
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Pon tu contraseña" required
+                class="entrada-password" />
+
+            <button type="submit" class="boton-ingresar">Entrar</button>
+        </form>
+
+
+        <div class="registro-link">
+            <br>
+            <p>¿Eres nuevo cliente?</p>
+            <br>
+            <a href="registrarse.html">
+                <button class="boton-registrarse">Registrarse</button>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Te dejo aqui el codigo de donde saque los copos https://codepen.io/sdavidprince/pen/ZYzydXy -->
+    <script>
+        function createSnowflakes() {
+            const numFlakes = 50;
+            const colors = ['#ffffff', '#d4f1f9', '#e8f8ff'];
+
+            for (let i = 0; i < numFlakes; i++) {
+                const flake = document.createElement('div');
+                flake.classList.add('snowflake');
+                flake.textContent = '❄';
+                document.body.appendChild(flake);
+
+                const size = Math.random() * 10 + 10 + 'px';
+                flake.style.left = Math.random() * 100 + 'vw';
+                flake.style.fontSize = size;
+                flake.style.color = colors[Math.floor(Math.random() * colors.length)];
+                flake.style.animationDuration = Math.random() * 5 + 5 + 's';
+                flake.style.animationDelay = Math.random() * 5 + 's';
+            }
+        }
+
+
+        window.addEventListener('DOMContentLoaded', createSnowflakes);
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById("formLogin").addEventListener("submit", async e => {
+            e.preventDefault();
+            const datos = new FormData(e.target);
+
+            const r = await fetch("login.php", { method: "POST", body: datos });
+            const t = await r.text();
+
+            const msg = document.getElementById("mensaje-error");
+            if (t.trim() === "ok") {
+                window.location.href = "index.html";
+            } else {
+                msg.textContent = "Usuario o contraseña incorrectos";
+                msg.style.display = "block";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+     background-color: #8C7B75;
+     color: #1A1A1A;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ .contenedor-login {
+     background: white;
+     padding: 40px 30px;
+     border-radius: 8px;
+     box-shadow: 0 4px 15px rgba(0, 120, 255, 0.2);
+     width: 350px;
+     text-align: center;
+     position: relative;
+ }
+
+ .contenedor-login img {
+     width: 120px;
+     margin-bottom: 20px;
+ }
+
+ .titulo-login {
+     margin-bottom: 25px;
+     color: #0078FF;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 6px;
+     font-weight: 600;
+     text-align: left;
+ }
+
+ .entrada-texto,
+ .entrada-password {
+     width: 100%;
+     padding: 12px 10px;
+     margin-bottom: 20px;
+     border: 2px solid #0078FF;
+     border-radius: 5px;
+     font-size: 1rem;
+     transition: border-color 0.3s;
+ }
+
+ .entrada-texto:focus,
+ .entrada-password:focus {
+     outline: none;
+     border-color: #005FCC;
+ }
+
+ .boton-ingresar {
+     width: 100%;
+     padding: 12px;
+     background-color: #0078FF;
+     border: none;
+     border-radius: 5px;
+     color: white;
+     font-weight: bold;
+     font-size: 1.1rem;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+
+ .boton-ingresar:hover {
+     background-color: #005FCC;
+ }
+
+ .mensaje-error {
+     color: #cc0000;
+     font-size: 0.9rem;
+     margin-bottom: 15px;
+     display: none;
+     text-align: center;
+ }
+
+
+
+ .boton-registrarse {
+     width: 100%;
+     padding: 12px;
+     background-color: #ffa600;
+     border: none;
+     border-radius: 5px;
+     color: white;
+     font-weight: bold;
+     font-size: 1.1rem;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+
+ body {
+     background: #1a1a1a;
+     color: white;
+     text-align: center;
+     font-family: 'Arial', sans-serif;
+     padding: 20px;
+     overflow-x: hidden;
+     overflow-y: hidden;
+ }
+
+ a {
+     color: white;
+ }
+
+ .snowflake {
+     position: fixed;
+     top: -10px;
+     font-size: 10px;
+     opacity: 0.7;
+     pointer-events: none;
+     animation: fall linear infinite;
+ }
+
+ @keyframes fall {
+     0% {
+         transform: translateY(0) translateX(0);
+         opacity: 0.9;
+     }
+
+     100% {
+         transform: translateY(100vh) translateX(20px);
+         opacity: 0.2;
+     }
+ }
+
+
+
+ .gorro {
+     position: absolute;
+     top: 88px;
+     left: 50%;
+     transform: translateX(-50%) rotate(-5deg);
+     width: 120px;
+     height: 120px;
+     z-index: 10;
+ }

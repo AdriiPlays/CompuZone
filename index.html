@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>CompuZone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Esto añade los iconos de bosstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark contenedor-menu px-4">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" class="logo" href="index.html">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Barra de busqueda -->
+            <div class="collapse navbar-collapse" id="navbarContenido">
+                <form class="d-flex mx-auto w-75" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca tu nuevo equipo"
+                        aria-label="Search" style="width: 100%;">
+                    <button class="btn btn-outline-light botonBuscar" type="submit">Buscar</button>
+                </form>
+                <!-- Mi cuenta -->
+                <a href="login.html">
+                    <div class="d-flex align-items-center ms-3">
+                        <button class="btn btn-outline-light me-3" type="button" aria-label="Mi cuenta">
+                            <i class="bi bi-person-fill"></i>
+                        </button>
+                </a>
+
+                <!-- Carrito -->
+
+                <a href="sobreNosotros.html"> <button class="btn btn-outline-light" type="button" aria-label="Carrito">
+                        <i class="bi bi-cart-fill"></i>
+                    </button></a>
+
+            </div>
+        </div>
+    </nav>
+    <hr class="linea">
+    <br>
+
+
+    <div id="carouselExampleControls" class="carousel slide carrusel-pequeno" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1560x349-oct-top.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/1560x349-es-macbook.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/1560x349-oct-top.webp" class="d-block w-100" alt="...">
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <br>
+    <h2 class="Descuentos">🔥 Descuentos Exclusivos 🔥</h2>
+
+    <div class="contenedor-fuego">
+        <div class="productos" id="productos"></div>
+        <img class="fuegogif" src="Burning Live Wire Sticker.gif" alt="">
+    </div>
+    <br>
+    <h2 class="produ">Productos</h2>
+
+    <div class="contenedor">
+        <a href="Productos/componentes.html">
+            <div class="caja"><img src="img/Productos/Productos/500x500-componentes.webp"></div>
+        </a>
+        <a href="Productos/electrodomesticos.html">
+            <div class="caja"><img src="img/Productos/Productos/500x500-hogar.webp"></div>
+        </a>
+        <a href="Productos/monitores.html">
+            <div class="caja"><img src="img/Productos/Productos/500x500-monitores.webp"></div>
+        </a>
+        <a href="Productos/smartphones.html">
+            <div class="caja"><img src="img/Productos/Productos/500x500-smartphones-y-tablets-v2.webp"></div>
+        </a>
+        <a href="Productos/portatiles.html">
+            <div class="caja"><img src="img/Productos/Productos/500x500-portatiles.webp"></div>
+        </a>
+        <a href="Productos/televisores.html">
+            <div class="caja"><img src="img/Productos/Productos/tv-500x500-v2.webp"></div>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <div class="contenedor-servicios">
+        <div class="Servicios">
+            <i class="bi bi-truck"></i>
+            <div class="textos">
+                <h5 class="servicio">🚀 Envíos Exprés 24h</h5>
+                <p class="servicioo">
+                    Envíos en 24-48 h para pedidos peninsulares.<br>
+                    Recibe tu pedido en 24 h si lo realizas antes de las 12 h
+                </p>
+            </div>
+        </div>
+
+        <div class="Servicios">
+            <i class="bi bi-flower1"></i>
+            <div class="textos">
+                <h5 class="servicio">Compra responsable</h5>
+                <p class="servicioo">Al realizar tu pedido en nuestra web, contribuyes a un consumo más sostenible
+                    y apoyas productos eco-friendly.</p>
+            </div>
+        </div>
+
+        <div class="Servicios">
+            <i class="bi bi-gem"></i>
+            <div class="textos">
+                <h5 class="servicio">Calidad garantizada</h5>
+                <p class="servicioo">Todos nuestros productos pasan estrictos controles de calidad.</p>
+            </div>
+        </div>
+    </div>
+    <div class="marcas">
+        <section class="contenedor-marcas my-5">
+            <h2 class="Descuentos">Nuestras Marcas</h2>
+
+            <div id="carouselExampleControls" class="carousel slide carrusel-pequeno" data-bs-ride="carousel"
+                data-bs-interval="2000"> <!-- aumentar velocidad del carrusel-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/marcas/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/marcas/2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/marcas/3.png" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/marcas/4.png" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/marcas/5.png" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/marcas/6.png" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/marcas/7.png" class="d-block w-100" alt="...">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <section class="contenedor-reseñas">
+        <h2 class="Descuentos">Opiniones de nuestros clientes</h2>
+        <div class="organizar-reseñas">
+            <div class="reseñastexto">
+                <div class="estrellas">★★★★★</div>
+                <p>
+                    Nunca había comprado aquí, pero todo súper bien. El proceso de compra muy fácil y la entrega
+                    también
+                    súper rápida.
+                </p>
+                <div class="nombre">Carlos M.</div>
+            </div>
+            <div class="reseñastexto">
+                <div class="estrellas">★★★★☆</div>
+                <p>
+                    navegación fácil, muy intuitiva y rapida. los articulos bien detallados
+                </p>
+                <div class="nombre">Laura G.</div>
+            </div>
+            <div class="reseñastexto">
+                <div class="estrellas">★★★★★</div>
+                <p>
+                    Con la web no he tenido ningún problema. Todo OK.
+                </p>
+                <div class="nombre">Andrés R.</div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const productosArray = [
+            {
+                nombre: "Memoria RAM Corsair",
+                precio: "199.95€",
+                precioOriginal: "179.99€",
+                imagenes: [
+                    "img/Componentes/3/1.webp",
+                    "img/Componentes/3/2.webp",
+                    "img/Componentes/3/3.webp"
+                ],
+                resumen: "Velocidad, rendimiento y estilo RGB para tu equipo.",
+                descripcion: `
+        <h3>Descripción del producto</h3>
+        <p>
+            Corsair Vengeance RGB DDR5 ofrece la máxima velocidad y estabilidad para gamers y creadores de contenido.
+            Su iluminación RGB dinámica y personalizable la convierte en una opción perfecta para equipos de alto rendimiento.
+        </p>
+        <ul>
+            <li>Capacidad: 32GB (2x16GB)</li>
+            <li>Velocidad: 6000MHz</li>
+            <li>Tipo: DDR5</li>
+            <li>Latencia: CL36</li>
+        </ul>
+    `
+            },
+            {
+                nombre: "POCO F6 Pro 5G 12GB 512GB",
+                precio: "434.63€",
+                precioOriginal: "629.99€",
+                imagenes: [
+                    "img/smartphone/5/1.webp",
+                    "img/smartphone/5/2.webp",
+                    "img/smartphone/5/3.webp"
+                ],
+                resumen: "Gran rendimiento con Snapdragon 7s Gen 2 y pantalla AMOLED 120Hz.",
+                descripcion: `
+        <h3>Descripción del producto</h3>
+        <p>
+            El POCO X6 5G combina potencia, eficiencia y una gran pantalla AMOLED de 120Hz. 
+            Ideal para quienes buscan un smartphone rápido y fluido a un precio accesible.
+        </p>
+        <ul>
+            <li>Pantalla: 6.67" AMOLED 120Hz</li>
+            <li>Procesador: Snapdragon 7s Gen 2</li>
+            <li>Memoria RAM: 8GB</li>
+            <li>Almacenamiento: 256GB</li>
+            <li>Batería: 5100 mAh con carga rápida 67W</li>
+        </ul>
+    `
+            },
+            {
+                nombre: "Televisor Xiaomi TV P1E 43'' 4K UHD",
+                precio: "299.99€",
+                precioOriginal: "340.95€",
+                imagenes: [
+                    "img/televisores/6/1.webp",
+                    "img/televisores/6/2.webp",
+                    "img/televisores/6/3.webp"
+                ],
+                resumen: "Televisor económico con Android TV y control por voz integrado.",
+                descripcion: `
+        <h3>Descripción del producto</h3>
+        <p>
+            El Xiaomi TV P1E ofrece un diseño sin marcos y un rendimiento excelente para su precio. 
+            Compatible con el Asistente de Google y Chromecast integrado, ideal para un hogar conectado.
+        </p>
+        <ul>
+            <li>Pantalla: 43" LED 4K UHD</li>
+            <li>Compatibilidad: HDR10, HLG</li>
+            <li>Sistema operativo: Android TV</li>
+            <li>Asistente de voz: Google Assistant integrado</li>
+        </ul>
+    `
+            },
+            {
+                nombre: "Microondas Panasonic NN-GD38HS",
+                precio: "179.99€",
+                precioOriginal: "200€",
+                imagenes: [
+                    "img/Electrodomesticos/5/1.webp",
+                    "img/Electrodomesticos/5/2.webp",
+                    "img/Electrodomesticos/5/3.webp"
+                ],
+                resumen: "Microondas con tecnología Inverter y grill para cocinar más rápido.",
+                descripcion: `
+        <h3>Descripción del producto</h3>
+        <p>
+            Cocina y calienta tus platos de manera uniforme con el microondas Panasonic NN-GD38HS. 
+            Gracias a la tecnología Inverter, los alimentos conservan mejor su textura y sabor.
+        </p>
+        <ul>
+            <li>Potencia: 1000W microondas + grill</li>
+            <li>Capacidad: 23 L</li>
+            <li>Tecnología: Inverter y Grill Quartz</li>
+            <li>Acabado: Acero inoxidable</li>
+        </ul>
+    `
+            },
+            {
+                nombre: "Portátil Acer Aspire 5 A515",
+                precio: "699.99€",
+                precioOriginal: "810€",
+                imagenes: [
+                    "img/portatiles/5/1.webp",
+                    "img/portatiles/5/2.webp",
+                    "img/portatiles/5/3.webp"
+                ],
+                resumen: "Portátil equilibrado para trabajo y estudio diario.",
+                descripcion: `
+        <h3>Descripción del producto</h3>
+        <p>
+            El Acer Aspire 5 ofrece un excelente equilibrio entre rendimiento, autonomía y precio. 
+            Ideal para estudiantes, oficina y teletrabajo, con diseño fino y ligero.
+        </p>
+        <ul>
+            <li>Pantalla: 15.6" Full HD</li>
+            <li>Procesador: Intel Core i5-1335U</li>
+            <li>Memoria RAM: 16GB DDR4</li>
+            <li>Almacenamiento: SSD 512GB</li>
+            <li>Sistema operativo: Windows 11 Home</li>
+        </ul>
+    `
+            },
+            {
+                nombre: "Fuente de Alimentación Seasonic",
+                precio: "134.99€",
+                precioOriginal: "150.43€",
+                imagenes: [
+                    "img/Componentes/5/1.webp",
+                    "img/Componentes/5/2.webp",
+                    "img/Componentes/5/3.webp"
+                ],
+                resumen: "Fuente modular de alta eficiencia y bajo ruido.",
+                descripcion: `
+        <h3>Descripción del producto</h3>
+        <p>
+            La Seasonic FOCUS GX-850 combina eficiencia, potencia y silencio. 
+            Su certificación 80+ Gold garantiza un excelente rendimiento energético.
+        </p>
+        <ul>
+            <li>Potencia: 850W</li>
+            <li>Certificación: 80+ Gold</li>
+            <li>Tipo: Totalmente modular</li>
+            <li>Ventilador: 120mm Fluid Dynamic Bearing</li>
+        </ul>
+    `
+            },
+        ];
+
+        const contenedor = document.getElementById("productos");
+
+        productosArray.forEach(producto => {
+            const div = document.createElement("div");
+            div.classList.add("producto");
+            div.innerHTML = `
+            <a href="Productos/producto.html" class="enlace-producto">
+                <img src="${producto.imagenes[0]}" alt="${producto.nombre}" />
+                <h3>${producto.nombre}</h3>
+                <p class="precio">${producto.precio}</p>
+                <p class="precio-original">${producto.precioOriginal}</p>
+            </a>
+        `;
+
+            div.querySelector(".enlace-producto").addEventListener("click", (e) => {
+                e.preventDefault();
+                localStorage.setItem("productoSeleccionado", JSON.stringify(producto));
+                window.location.href = "Productos/producto.html";
+            });
+
+            contenedor.appendChild(div);
+        });
+    </script>
+
+
+    <footer class="text-center text-dark py-3 border-top">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2025 All rights reserved.
+                <span class="text-warning">CompuZone</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

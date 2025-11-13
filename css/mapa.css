@@ -1,0 +1,80 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 48px 16px;
+    background: linear-gradient(135deg, #4a90e2, #50c9c3);
+    color: white;
+}
+
+.logo {
+    width: 300px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+
+.mapa {
+    max-width: 800px;
+    margin: 48px auto;
+    padding: 0 16px;
+}
+
+.mapa ul {
+    list-style: none;
+    padding-left: 16px;
+}
+
+.mapa a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.mapa a:hover {
+    color: #50c9c3;
+}
+
+
+.seccion1 li {
+    margin: 16px 0;
+    font-size: 19px;
+}
+
+.seccion2 {
+    margin-top: 8px;
+    padding-left: 24px;
+    border-left: 2px solid #dfe6ee;
+}
+
+.seccion2 li {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .sitemap {
+        padding: 0 8px;
+    }
+}
